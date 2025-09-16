@@ -1,0 +1,85 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #0052d4, #4364f7, #6fb1fc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 40px;   /* Perfect size for navbar */
+  width: auto;    /* Keeps aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.1);
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffe600;
+}
+
+/* Main content */
+main {
+  text-align: center;
+  margin-top: 80px;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #0052d4;
+}
+
+main p {
+  font-size: 1.2rem;
+  color: #444;
+}
